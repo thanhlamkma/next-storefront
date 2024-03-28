@@ -1,0 +1,23 @@
+@mixin center-item($flex, $content, $align) {
+    display: $flex !important;
+    justify-content: $content !important;
+    align-items: $align !important;
+}
+
+@mixin befo($bg, $width, $height) {
+    position: absolute;
+    content: '';
+    background: $bg;
+    width: $width;
+    height: $height;
+}
+
+@mixin trans($time) {
+    transition: $time;
+}
+
+@mixin circle($width, $height, $radius) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+}

@@ -1,0 +1,102 @@
+.action-bar {
+  > .ant-col {
+    @apply flex justify-center items-center;
+  }
+  .action-icon-container {
+    @apply rounded-full bg-white w-[1.65em] h-[1.65em] text-[0.55em] relative;
+    box-shadow: 2px 2px 10px -4px gray;
+    transition: all linear 0.15s;
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    .action-icon,
+    .active-action-icon {
+      transition: all linear 0.15s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .wish-list-action {
+    .active-action-icon {
+      visibility: hidden;
+      opacity: 0;
+    }
+    .action-icon {
+      visibility: visible;
+      opacity: 1;
+    }
+    &:hover {
+      .action-icon {
+        color: red;
+      }
+    }
+  }
+  .add-to-order-action {
+    .active-action-icon {
+      visibility: hidden;
+      opacity: 0;
+    }
+    .action-icon {
+      visibility: visible;
+      opacity: 1;
+    }
+    &:hover {
+      .action-icon {
+        color: $hover-color;
+      }
+    }
+  }
+  .add-to-buy-later-action {
+    .active-action-icon {
+      visibility: hidden;
+      opacity: 0;
+    }
+    .action-icon {
+      visibility: visible;
+      opacity: 1;
+    }
+    &:hover {
+      .action-icon {
+        color: black;
+      }
+    }
+  }
+
+  .wish-list-action.actived-action {
+    .active-action-icon {
+      visibility: visible;
+      color: red;
+      opacity: 1;
+    }
+    .action-icon {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  .add-to-order-action.actived-action {
+    .active-action-icon {
+      visibility: visible;
+      color: $hover-color;
+      opacity: 1;
+    }
+    .action-icon {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  .add-to-buy-later-action.actived-action {
+    .active-action-icon {
+      visibility: visible;
+      color: black;
+      opacity: 1;
+    }
+    .action-icon {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}

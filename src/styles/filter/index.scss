@@ -1,0 +1,25 @@
+@import "./wrap-filter.scss";
+@import "./price.scss";
+
+#filter {
+  color: #333;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+
+  @apply xs:px-4 mlg:px-0;
+
+  .ant-form-item {
+    margin: 0;
+    padding: 10px 0;
+  }
+}
+
+.text-filter {
+  color: red;
+  @apply py-3 pl-[2px] text-sm text-black-33 cursor-pointer;
+
+  &:hover {
+    @apply text-blue-33;
+  }
+}

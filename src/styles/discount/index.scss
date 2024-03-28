@@ -1,0 +1,115 @@
+#coupon{
+  .ant-tabs-tab-btn{
+    font-size: .875rem;
+    &:hover{
+      color: $hover-color;
+    }
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+    color: $hover-color;
+  }
+  .ant-tabs-ink-bar{
+    background: $hover-color;
+  }
+  .coupon{
+    &__img{
+      @include center-item(flex, center, center);
+    }
+    &__shape-top{
+      background: #fff;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      top: 0;
+      right: 0;
+      border: 1px solid #e5e7eb;
+      transform: translate(50%, -50%);
+      &:before{
+        @include befo(#fff, 30px, 10px);
+        top: -2px;
+        left: 0;
+        transform: translateX(-10%);
+      }
+    }
+    &__shape-bottom{
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+      background: #fff;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      bottom: 0;
+      right: 0;
+      border: 1px solid #e5e7eb;
+      transform: translate(50%, 50%);
+      &:before{
+        @include befo(#fff, 30px, 10px);
+        bottom: -2px;
+        left: 0;
+        transform: translateX(-10%);
+      }
+    }
+    &__deal{
+      font-size: 1.05rem;
+      margin: .1rem 0;
+    }
+    &__for-app{
+      color: $hover-color;
+      background: rgb(240, 248, 255);
+    }
+    &__dropdown{
+      &:hover{
+        .coupon__info{
+          opacity: 1;
+          visibility: visible;
+          transform: translateX(-50%) scaleY(1);
+        }
+      }
+    }
+    &__info{
+      box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 42px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+      background: #fff;
+      left: 0;
+      transform: translateX(-50%) scaleY(0);
+      z-index: 2;
+      top: 34px;
+      opacity: 0;
+      visibility: hidden;
+      transform-origin: 0 0;
+      transition: all .2s;
+      &:before{
+        @include befo(transparent, 100%, 34px);
+        top: -34px;
+        left: 0;
+      }
+      &::after{
+        @include befo(none, 0, 0);
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        top: -9px;
+        left: 50%;
+        transform: translateX(-2%);
+      }
+    }
+    &__item{
+      &:nth-child(odd) {
+        background: #e5e5e53a;
+      }
+    }
+    &__copy-btn{
+      @include circle(30px, 30px, 50%);
+      @include center-item(flex, center, center);
+      padding: 0;
+      background: rgb(221, 237, 252);
+      color: $hover-color;
+      border-color: rgb(221, 237, 252) !important;
+    }
+  }
+}
+.discover-more{
+  transition: all .2s;
+  color: $hover-color;
+  &:hover{
+    opacity: .8;
+  }
+}

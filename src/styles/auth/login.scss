@@ -1,0 +1,79 @@
+#login {
+  width: 100%;
+  padding: 3rem 0;
+  
+  .login-poup {
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    padding: 3.3rem 1rem;
+    margin: auto;
+    
+    @screen sm {
+      padding: 3.3rem 5rem 2.6rem;
+    }
+
+    .tabs {
+      border-bottom: 1px solid #eee;
+      list-style-type: none;
+      gap: 0.5rem;
+
+      .item-tab {
+        width: calc(50% - 0.5rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          width: 100%;
+          border-top: 3px solid transparent;
+          transform: scaleX(1);
+          transition: transform 0.3s,
+            border-color 0.3s,
+            -webkit-transform 0.3s;
+        }
+
+        &.active,
+        &:hover {
+          &::after {
+            border-color: #336699;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-form-item-required {
+    &::before {
+      display: none;
+    }
+  }
+
+  .ant-form-item-label {
+    label {
+      color: #666666;
+    }
+  }
+}
+
+.ant-modal{
+  #login{
+    padding: .8rem 1.125rem 0 1.125rem;
+    .container{
+      padding: 0;
+    }
+    .login-poup{
+      box-shadow: none;
+      width: 100%;
+      padding: 0;
+    }
+    .ant-btn{
+      height: 40px;
+      margin-top: 1rem;
+    }
+  }
+}

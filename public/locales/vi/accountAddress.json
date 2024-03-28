@@ -1,0 +1,23 @@
+{
+  "accountAddress": "Địa chỉ",
+  "addNewAddress": "Thêm địa chỉ mới",
+  "defaultAddress": "Địa chỉ mặc định",
+  "phone": "Điện thoại",
+  "youDontHaveAddress": "Bạn chưa có địa chỉ nào",
+  "company": "Công ty",
+  "enterCompany": "Nhập công ty",
+  "labelCity": "Thành phố",
+  "pickCity": "Chọn thành phố",
+  "labelDistrict": "Quận huyện",
+  "pickDistrict": "Chọn quận huyện",
+  "labelWards": "Phường xã",
+  "pickWards": "Nhập phường xã",
+  "enterAddress": "Nhập địa chỉ",
+  "addressType": "Loại địa chỉ",
+  "homeType": "Nhà riêng / Chung cư",
+  "companyType": "Cơ quan / Công ty",
+  "setDefaultAddess": "Đặt làm địa chỉ mặc định",
+  "delete": "Xóa",
+  "deleteSuccess": "Xóa địa chỉ thành công!",
+  "deleteFail": "Xóa địa chỉ thắt bại!"
+}

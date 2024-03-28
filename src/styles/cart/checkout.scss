@@ -1,0 +1,74 @@
+.checkout {
+  .shipping-method-container {
+    border: 1px solid $border-gray-color;
+    border-radius: 3px;
+  }
+
+  .shipping-method {
+    display: flex;
+    align-items: center;
+    border: 1px solid hsl(0, 0%, 94%);
+    border-radius: 3px;
+    padding: 14px 14px;
+    // background-color: rgb(239, 239, 239);
+    cursor: pointer;
+  }
+
+  .product-shipping-info-wrapper {
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 3px;
+    padding: 14px 14px;
+  }
+
+  .product-shipping-info + .product-shipping-info {
+    @apply xs:mt-[36px];
+    @apply md:mt-[12px];
+  }
+
+  .payment-method-container {
+    padding: 24px 14px;
+    border: 1px solid $border-gray-color;
+    border-radius: 3px;
+  }
+
+  .discount-zalo-text {
+    background-image: linear-gradient(
+      115deg,
+      rgb(27, 168, 255) -10%,
+      rgb(21, 124, 219) 100%
+    );
+    display: inline-flex;
+    margin-left: 4px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    align-items: center;
+
+    color: white;
+  }
+
+  .payment-method:not(.payment-method:first-child) {
+    @apply my-[20px];
+  }
+
+  .deals {
+    box-shadow: rgb(0 0 0 / 15%) 0px 1px 4px 0px;
+  }
+
+  .ant-radio-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: 841px) {
+    .deals {
+      width: 48%;
+    }
+  }
+
+  @media (max-width: 608px) {
+    .deals {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}

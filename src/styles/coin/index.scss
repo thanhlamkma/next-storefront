@@ -1,0 +1,62 @@
+#coin-manager {
+  .coin {
+    &__total-in-account span {
+      color: $color-orange;
+    }
+    &__title {
+      div {
+        background: $color-gold;
+      }
+      .blue {
+        background: $hover-color;
+      }
+    }
+    &__denominations {
+      background-color: rgb(13, 103, 199);
+      background-image: url(https://frontend.tikicdn.com/_desktop-next/static/img/icons/TopUpXu/pattern.svg);
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-blend-mode: overlay;
+      background-size: contain;
+      color: #fff;
+    }
+    &__enter-money {
+      @apply xs:mt-[5%] 2sm:mt-[4.5rem];
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+      input {
+        @apply xs:text-[2rem] 2sm:text-[3rem];
+        background: none;
+        border: none;
+        font-weight: bold;
+        padding: 0;
+        color: #fff;
+        height: 75px !important;
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.637);
+        }
+      }
+    }
+    &__offer-money {
+      @apply xs:mb-0 2sm:mb-1;
+      li {
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        padding: 0.3rem 0.8rem;
+        display: inline-block;
+        margin: 0.4rem 0.6rem 0.4rem 0;
+        border-radius: 5px;
+        cursor: pointer;
+        &.active {
+          background: #fff;
+          color: #000;
+        }
+      }
+    }
+    &__description span {
+      color: $hover-color;
+    }
+  }
+  .account__btn {
+    height: 40px !important;
+  }
+}

@@ -1,0 +1,50 @@
+#filter-price {
+  .form-price {
+    .ant-input {
+      width: 100%;
+      height: 40px;
+      color: #999;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      line-height: 37px;
+      vertical-align: middle;
+      -webkit-appearance: textfield;
+      font-family: Poppins, sans-serif;
+      outline: none !important;
+    }
+
+    // .numeric-input .ant-tooltip-inner {
+    //   min-width: 32px;
+    //   min-height: 37px;
+    //   color: yellow;
+    //   background-color: green;
+    //   width: 800px;
+    // }
+
+    // .numeric-input .numeric-input-title {
+    //   font-size: 14px;
+    // }
+
+    .ant-input-number-input {
+      text-align: center;
+    }
+
+    .ant-input-number-handler-wrap {
+      visibility: hidden;
+    }
+
+    .btn-submit {
+      height: 40px !important;
+      color: #fff;
+      border-color: #336699;
+      background-color: #336699;
+      border-radius: 3px;
+
+      &:hover {
+        color: #fff;
+        border-color: #3c78b4;
+        background-color: #3c78b4;
+      }
+    }
+  }
+}

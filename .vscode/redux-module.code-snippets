@@ -1,0 +1,43 @@
+{
+	"Create Redux Observable Module": {
+		"prefix": ["crom"],
+		"body": [
+			"import {ofType} from 'redux-observable';",
+			"import {catchError, map, mergeMap} from 'rxjs/operators';",
+			"import {Action} from 'src/core/models/redux';",
+			"import {",
+			"\tcreateReduxObservableModule,",
+			"\tReduxObservableModuleEpicProps,",
+			"} from 'src/core/redux/ReduxObservableModule';",
+			"import ${3:Demo}Repository from 'src/repositories/${3:Demo}Repository';",
+			"",
+			"export interface ${1:Demo}Reducer {}",
+			"",
+			"const defaultState: ${1:Demo}Reducer = {};",
+			"",
+			"const ${2:demo}Module = createReduxObservableModule(",
+			"\t{",
+			"\t\t${4:test}: ({",
+			"\t\t\tactions$,",
+			"\t\t\tactions,",
+			"\t\t\tactionTypes,",
+			"\t\t}: ReduxObservableModuleEpicProps<Action<number>>) =>",
+			"\t\t\tactions$.pipe(",
+			"\t\t\t\tofType(actionTypes.start),",
+			"\t\t\t\tmergeMap((action) =>",
+			"\t\t\t\t\t${3:Demo}Repository.getOne(action.payload).pipe(",
+			"\t\t\t\t\t\tmap((response) => actions.success(response.data)),",
+			"\t\t\t\t\t\tcatchError((error) => of(actions.failed(error)))",
+			"\t\t\t\t\t),",
+			"\t\t\t\t),",
+			"\t\t\t),",
+			"\t},",
+			"\t'${2:demo}',",
+			"\tdefaultState,",
+			");",
+			"",
+			"export default ${2:demo}Module;"
+		],
+		"description": ""
+	}
+}

@@ -1,0 +1,23 @@
+{
+  "accountAddress": "Address",
+  "addNewAddress": "Add new address",
+  "defaultAddress": "Default address",
+  "phone": "Phone",
+  "youDontHaveAddress": "You don't have an address yet",
+  "company": "Company",
+  "enterCompany": "Enter your company",
+  "labelCity": "City",
+  "pickCity": "Choose the city",
+  "labelDistrict": "District",
+  "pickDistrict": "Enter a district",
+  "labelWards": "Wards",
+  "pickWards": "Enter a ward",
+  "enterAddress": "Enter address",
+  "addressType": "Address Type",
+  "homeType": "Home / Apartment",
+  "companyType": "Organization / Company",
+  "setDefaultAddess": "Set as default address",
+  "delete": "Delete",
+  "deleteSuccess": "Delete address successfully!",
+  "deleteFail": "Delete address failed!"
+}

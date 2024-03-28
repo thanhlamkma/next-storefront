@@ -1,0 +1,73 @@
+#footer {
+  position: relative;
+  z-index: 20;
+
+  .footer-logo {
+    margin-bottom: 10px;
+    height: 60px;
+    background-image: url("../../assets/images/logo(PCandtablet).svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: 600px) {
+      margin-bottom: 10px;
+      height: 20px;
+      background-image: url("../../assets/images/logo(smartphone).svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .email-input {
+    border: none;
+    outline: none;
+  }
+
+  .email-input:focus {
+    border: none;
+    outline: none;
+  }
+
+  .subcribe-btn {
+    transition: all linear 0.2s;
+  }
+
+  .social-icon + .social-icon {
+    margin-left: 8px;
+  }
+
+  .social-icon:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+  .phone-number,
+  .item-contact-service {
+    transition: all linear 0.2s;
+    cursor: pointer;
+  }
+
+  .phone-number:hover,
+  .item-contact-service:hover {
+    @apply text-hover-color;
+  }
+
+  .product-categories {
+    border-top: 1px solid $border-gray-color;
+  }
+
+  .category-item:not(.category-item:last-child)::after {
+    content: "";
+    border-left: 1px solid $border-gray-color;
+    @apply mx-[9px];
+  }
+
+  .category-item:hover {
+    cursor: pointer;
+    color: $hover-color;
+  }
+
+  // .footer-fourth-row {
+  //   @apply border-x-
+  // }
+}

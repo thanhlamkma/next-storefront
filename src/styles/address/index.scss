@@ -1,0 +1,85 @@
+.address-add {
+  cursor: pointer;
+  text-align: center;
+  border: 1px dashed $border-gray-color;
+  color: $hover-color;
+}
+.address {
+  border: 1px solid $border-gray-color;
+  &__header {
+    @apply flex justify-between xs:items-start sm:items-center;
+  }
+  &__name {
+    span:first-child {
+      font-size: 0.92rem;
+      text-transform: capitalize;
+      line-height: 18px;
+    }
+  }
+  &__default {
+    color: $color-success;
+    font-size: 0.75rem;
+    .relative {
+      top: -1px;
+    }
+  }
+  &__item {
+    font-size: 0.875rem;
+    span {
+      color: $color-gray;
+    }
+  }
+}
+.submit-address-form-btn {
+  background: $hover-color;
+  font-weight: 600;
+  opacity: 1;
+  color: #fff;
+  transition: all 0.2s;
+  border-radius: 2px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.address-form {
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: $hover-color;
+    border-color: $hover-color;
+  }
+}
+.address-form__item {
+  .provider-choosing + .provider-choosing {
+    @apply xs:mt-2 sm:mt-0;
+  }
+
+  &.ant-form-item-with-help {
+    margin-bottom: 0 !important;
+    .ant-form-item-explain {
+      min-height: 16px;
+    }
+  }
+
+  label {
+    font-weight: 600;
+    height: 24px;
+  }
+  input,
+  select {
+    height: 40px;
+  }
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    height: 40px;
+    .ant-select-selection-placeholder {
+      position: relative;
+      top: 4px;
+    }
+    .ant-select-selection-item {
+      line-height: 39px;
+    }
+  }
+
+  .ant-form-item-explain-error {
+    font-size: 11px;
+    padding-left: 4px;
+  }
+}

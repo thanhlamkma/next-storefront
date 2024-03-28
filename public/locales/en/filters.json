@@ -1,0 +1,16 @@
+{
+  "allCategories": "All Categories",
+  "Brand": "Brand",
+  "cleanAll": "Clean All",
+  "color": "Color",
+  "defaultSorting": "Default sorting",
+  "filter": "Filter",
+  "price": "Price",
+  "Size": "Size",
+  "sortAverageRating": "Sort by average rating",
+  "sortBy": "Sort By",
+  "sortFromHigh": "Sort by price: high to low",
+  "sortFromLow": "Sort by price: low to high",
+  "sortLatest": "Sort by latest",
+  "sortPopular": "Sort by popularity"
+}

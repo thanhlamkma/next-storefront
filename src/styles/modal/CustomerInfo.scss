@@ -1,0 +1,42 @@
+.customer-infor-modal {
+  .ant-form-item-label > label {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .ant-form-item-control-input-content > input {
+    @apply py-[8px];
+  }
+
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+
+  .ant-form-item-label {
+    padding-bottom: 4px;
+  }
+
+  .ant-modal-body {
+    padding-top: 12px;
+  }
+
+  .ant-modal-content {
+    border-radius: 4px;
+  }
+
+  .ant-modal-header {
+    border-radius: 4px 4px 0;
+  }
+
+  .submit-customer-info-btn {
+    height: 40px;
+    border-radius: 3px;
+    background-color: #336699;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  @media (max-width: 600px) {
+    width: 90% !important;
+  }
+}

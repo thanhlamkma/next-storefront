@@ -1,0 +1,60 @@
+#card-product {
+  position: relative;
+  border: 2px solid transparent;
+  transition: border 0.3s, color 0.3s, background-color 0.3s ease-in;
+
+  &:hover {
+    border: 2px solid #f93;
+  }
+
+  .product-name {
+    @apply text-black-33 text-[13px] capitalize font-medium whitespace-nowrap w-full;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .new-price {
+    @apply text-black-33 font-semibold xs:text-[13px] sm:text-base;
+  }
+
+  .old-price {
+    @apply xs:text-[13px] sm:text-base font-normal;
+    color: #aaa;
+    white-space: nowrap;
+    text-decoration: line-through;
+  }
+
+  .expand-info {
+    width: 100%;
+
+    .description {
+      padding-right: 16px;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .button-add-cart {
+      max-width: 100%;
+      height: 48px;
+      background-color: transparent;
+      border: 2px solid #ccc;
+      color: #333;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @apply xs:text-[12px] sm:text-sm;
+
+      &:hover {
+        background-color: #336699;
+        border-color: #336699;
+        color: #fff;
+      }
+    }
+  }
+}

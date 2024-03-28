@@ -1,0 +1,106 @@
+@import "~antd/lib/style/themes/default.less";
+
+.ant-input {
+  padding: 8px 16px;
+  outline: none !important;
+  height: 44px;
+}
+
+.ant-input-password {
+  height: 44px;
+  .ant-input {
+    height: auto !important;
+  }
+}
+
+.ant-input-number,
+.ant-input {
+  outline: none !important;
+
+  &:focus,
+  &:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.ant-input-number-focused {
+  box-shadow: none !important;
+}
+
+// custom error form
+.ant-form-item-explain.ant-form-item-explain-error {
+  color: #ff4d4f;
+}
+
+.ant-form-item-explain {
+  font-size: 11px;
+}
+
+.ant-divider {
+  border-color: #eee;
+}
+
+.modal-wrapper-component {
+  .ant-modal-close-x {
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+  }
+  .ant-modal-body {
+    padding: 0;
+
+    .modal-header {
+      padding: 16px 24px;
+      color: #000000d9;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      word-wrap: break-word;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: 2px 2px px 0 0;
+    }
+
+    .modal-content {
+      padding: 24px;
+    }
+  }
+  .ant-modal-footer {
+    text-align: center;
+    border-top: none;
+    padding: 16px;
+
+    .modal-confirm-btn {
+      transition: all 0.2s;
+      font-size: 0.8rem;
+      border-radius: 3px;
+      &.btn-blue {
+        background: #336699;
+        color: #fff;
+        &:hover {
+          opacity: 0.9;
+          border-color: #336699 !important;
+        }
+      }
+      &.btn-outline-blue {
+        color: #336699;
+        border: 1px solid #336699;
+        &:hover {
+          background: #336699 !important;
+          color: #fff !important;
+          border-color: #336699 !important;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
+
+// FormItem Checkbox has error
+.ant-form-item-has-error {
+  .ant-checkbox {
+    .ant-checkbox-inner {
+      border-color: @error-color;
+    }
+  }
+}
